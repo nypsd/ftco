@@ -11,10 +11,7 @@ int ledValue = 0; // variable for whether LED is on
 
 // setup() will be called once at the beginning
 void setup() {
-  // need to call this to start the Serial communication
-  // 9600 is the speed of the data communication, always
-  // use this number unless explicitily told to use a 
-  // different one
+  // start the Serial communication
   Serial.begin(9600);
 
   // set that the LED pin will be an output
