@@ -1,13 +1,13 @@
 /*
  * Control DC Motor
  * 
- * Circuit: motor, transitor and diode on Pin 6
+ * Circuit: motor, transitor and diode on Pin 9
  *          potentiometer on A0
  */
 
-int motorPin = 6; // variable for LED pin
+int motorPin = 9; // variable for motor pin
+int potPin = A0; // variable for the potentiometer
 
-// setup() will be called once at the beginning
 void setup() {
   // start the Serial communication
   Serial.begin(9600);
@@ -17,7 +17,6 @@ void setup() {
 
 }
 
-// loop() will be called repeatedly after setup() is done
 void loop() {
 
   // read in the value of the potentiometer
