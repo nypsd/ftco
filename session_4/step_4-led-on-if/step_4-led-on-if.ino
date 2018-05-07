@@ -1,6 +1,6 @@
 /*
     4. Turn on LED when above threshold using explicit
-       writes and else statement
+       writes
 */
 
 
@@ -33,13 +33,12 @@ void loop() {
     // print message
     Serial.println("above threshold");
 
-    // pause to not trigger too many taps
-    delay(tapDebounce);
-
     // turn on LED
     digitalWrite(ledPin, HIGH);
-  } else {
+
+    // pause to not trigger too many taps
+    delay(tapDebounce);
+  }
     // turn off LED
     digitalWrite(ledPin, LOW);
-  }
 }

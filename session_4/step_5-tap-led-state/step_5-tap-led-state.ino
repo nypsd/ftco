@@ -4,14 +4,14 @@
        Hard code turning on LED (to test circuit)
     2. Set threshold so that a message is printed when go above value
     3. Add debounce timer
-    4. Turn on LED when above threshold using explicit writes and else statement
-    5. Turn LED using !ledState
+    4. Turn on LED when above threshold using explicit writes
+    5. Toggle LED using !ledState
     Stretch - potentiometer to set threshold
 */
 
 
 int piezoPin = A0;
-int ledPin = 13;
+int ledPin = 7;
 int ledState = LOW;
 
 int tapThreshold = 700; // threshold for piezo
