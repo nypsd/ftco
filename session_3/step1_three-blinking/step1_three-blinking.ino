@@ -1,5 +1,5 @@
 /*
- * Traffic Light 
+ * Mulitple Blinking 
  * 
  * Circuit: Red LED on Pin 8
  *          Yellow LED on Pin 9
@@ -7,36 +7,33 @@
  *          All with their own current limiting resistors
  */
 
+int redLed = 8;
+int yellowLed = 9;
+int greenLed = 10;
+
 // setup() will be called once at the beginning
 void setup() {
   // set that each of the pins will be outputs
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(10, OUTPUT);
+  pinMode(redLed, OUTPUT);
+  pinMode(yellowLed, OUTPUT);
+  pinMode(greenLed, OUTPUT);
 
 }
 
 // loop() will be called repeatedly after setup() is done
 void loop() {
-  // turn off red
-  digitalWrite(8, LOW);
-  // turn on green
-  digitalWrite(10, HIGH);
+  // turn on LEDs
+  digitalWrite(redLed, HIGH);
+  digitalWrite(yellowLed, HIGH);
+  digitalWrite(greenLed, HIGH);
   // wait
   delay(2000);
   
-  // turn off green
-  digitalWrite(10, LOW);
-  // turn on yellow
-  digitalWrite(9, HIGH);  
+  // turn off LEDs
+  digitalWrite(redLed, LOW);
+  digitalWrite(yellowLed, LOW);
+  digitalWrite(greenLed, LOW); 
   // wait
   delay(500);
-  
-  // turn off yellow
-  digitalWrite(9, LOW);
-  // turn on red
-  digitalWrite(8, HIGH);
-  // wait
-  delay(2000);
 
 }
