@@ -1,17 +1,15 @@
 /*
  * Fade LED On and Off
  * 
- * Circuit: LED and resistor on 7
+ * Circuit: LED and resistors on 9, 10, 11
  */
 
-int ledPin = 7; // variable for LED pin
+int redPin = 9; // variable for red LED pin
+int greenPin = 10; // variable for green LED pin
+int bluePin = 11; // variable for blue LED pin
 
-// setup() will be called once at the beginning
 void setup() {
-  // need to call this to start the Serial communication
-  // 9600 is the speed of the data communication, always
-  // use this number unless explicitily told to use a 
-  // different one
+  // start the Serial communication
   Serial.begin(9600);
 
   // set that the LED pin will be an output
@@ -19,7 +17,6 @@ void setup() {
 
 }
 
-// loop() will be called repeatedly after setup() is done
 void loop() {
 
   // for loop starting at 0 and going up to 254
@@ -29,7 +26,10 @@ void loop() {
     Serial.println("i");
     
     // set the output value between 0 and 255
-    analogWrite(ledPin, i);
+    analogWrite(redPin, i);
+    analogWrite(greenPin, 100);
+    analogWrite(bluePin, 200);
+    
     // pause
     delay(50);
   }
