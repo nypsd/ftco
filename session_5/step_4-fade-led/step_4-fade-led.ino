@@ -12,8 +12,10 @@ void setup() {
   // start the Serial communication
   Serial.begin(9600);
 
-  // set that the LED pin will be an output
-  pinMode(ledPin, OUTPUT);
+  // set that the LED pins will be an output
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
 
 }
 
@@ -23,7 +25,7 @@ void loop() {
   // i++ is a shorter way to write i = i + 1
   for(int i=0; i<255; i++) {
     // print out the value of i
-    Serial.println("i");
+    Serial.println(i);
     
     // set the output value between 0 and 255
     analogWrite(redPin, i);
