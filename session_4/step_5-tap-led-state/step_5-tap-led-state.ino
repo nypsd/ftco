@@ -11,7 +11,7 @@
 
 
 int piezoPin = A0;
-int ledPin = 7;
+int ledPin = 9;
 int ledState = LOW;
 
 int tapThreshold = 700; // threshold for piezo
