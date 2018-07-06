@@ -29,13 +29,13 @@ void loop() {
   // first argument: the number we want to scale
   // second and third arguments: orginal min and max for potValue
   // fourth and fifth arguments: new min and max
-  int scaledPotValue = map(potValue, 0, 1023, 0 255);
+  int scaledPotValue = map(potValue, 0, 1023, 0, 255);
 
   // print so we can see what is happening
   Serial.print("Original value: ");
   Serial.print(potValue);
   Serial.print(" Mapped value: ");
-  Serial.prinlnt(scaledPotValue);
+  Serial.println(scaledPotValue);
 
   // turn on the motor
   analogWrite(motorPin, scaledPotValue);
