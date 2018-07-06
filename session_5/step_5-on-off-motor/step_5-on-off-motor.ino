@@ -5,7 +5,7 @@
  *          potentiometer on A0
  */
 
-int motorPin = 6; // variable for LED pin
+int motorPin = 9; // variable for LED pin
 
 // setup() will be called once at the beginning
 void setup() {
