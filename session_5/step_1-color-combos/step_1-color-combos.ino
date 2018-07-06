@@ -11,8 +11,9 @@ int bluePin = 11; // variable for blue LED pin
 void setup() {
 
   // set that the LED pin will be an output
-  pinMode(ledPin, OUTPUT);
-
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
 }
 
 void loop() {
@@ -29,4 +30,7 @@ void loop() {
   digitalWrite(redPin, HIGH);
   digitalWrite(greenPin, LOW);
   digitalWrite(bluePin, HIGH);
+
+  // pause
+  delay(1000);
 }
