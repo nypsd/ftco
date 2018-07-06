@@ -23,7 +23,7 @@ void loop() {
   delay(2000);
 
   // turn off the motor
-  digitalWrite(motorPin, HIGH);
+  digitalWrite(motorPin, LOW);
   delay(3000);
   
 }
