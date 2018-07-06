@@ -6,7 +6,7 @@
 
 
 int piezoPin = A0;
-int ledPin = 7;
+int ledPin = 9;
 
 int tapThreshold = 700; // threshold for piezo
 

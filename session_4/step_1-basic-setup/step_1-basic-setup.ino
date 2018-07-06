@@ -6,7 +6,7 @@
 
 
 int piezoPin = A0;
-int ledPin = 7;
+int ledPin = 9;
 
 
 void setup() {
