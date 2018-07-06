@@ -7,7 +7,7 @@
 
 
 int neoPixelPin = 6; // pin that NeoPixels are connected to
-int numNeoPixels = 12; // number of NeoPixels
+int numNeoPixels = 16; // number of NeoPixels
 
 // to setup the NeoPixel library, tell it how many pixels, and which pin to use to send signals
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(numNeoPixels, neoPixelPin, NEO_GRB + NEO_KHZ800);
